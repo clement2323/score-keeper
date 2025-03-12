@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Score Keeper</h1>
+        
+        <div class="controls">
+            <div class="player-input">
+                <input type="text" id="playerName" placeholder="Nom du joueur">
+                <button id="addPlayer">Ajouter un joueur</button>
+            </div>
+            <div class="round-input">
+                <input type="text" id="roundName" placeholder="Nom de la manche">
+                <button id="addRound">Nouvelle manche</button>
+            </div>
+        </div>
+
+        <div class="scoreboard">
+            <table id="scoreTable">
+                <thead>
+                    <tr id="headerRow">
+                        <th>Manche</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="scoreBody">
+                </tbody>
+                <tfoot>
+                    <tr id="totalRow">
+                        <td><strong>Total</strong></td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
