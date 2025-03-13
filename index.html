@@ -26,7 +26,7 @@
                 <thead>
                     <tr id="headerRow">
                         <th>Manche</th>
-                        <th>Total</th>
+                        <th class="delete-column"></th>
                     </tr>
                 </thead>
                 <tbody id="scoreBody">
@@ -38,6 +38,12 @@
                     </tr>
                 </tfoot>
             </table>
+        </div>
+
+        <div class="data-controls">
+            <input type="file" id="fileInput" accept=".json" style="display: none;">
+            <button id="saveData" class="small-button"> Sauvegarder la partie</button>
+            <button id="loadData" class="small-button"> Charger une partie</button>
         </div>
     </div>
     <script src="app.js"></script>
