@@ -169,14 +169,26 @@ button:hover {
 }
 
 .delete-btn {
-    background: linear-gradient(45deg, #ff3333, #ff6666, #ff3333) !important;
+    background: transparent !important;
     padding: 0.2rem !important;
     width: 24px;
     height: 24px;
-    font-size: 0.8rem !important;
+    font-size: 1rem !important;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #ff3333;
+    opacity: 0.6;
+    box-shadow: none;
+    transition: all 0.3s ease;
+}
+
+.delete-btn:hover {
+    opacity: 1;
+    color: #ff6666;
+    transform: scale(1.2) !important;
+    background: transparent !important;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
 }
 
 .small-button {

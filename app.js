@@ -67,8 +67,13 @@ class ScoreKeeper {
         const deleteCell = document.createElement('td');
         const deleteBtn = document.createElement('button');
         deleteBtn.className = 'delete-btn';
-        deleteBtn.innerHTML = '×';
-        deleteBtn.addEventListener('click', () => this.deleteRound(roundIndex));
+        deleteBtn.innerHTML = '🗑️';
+        deleteBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (confirm('Êtes-vous sûr de vouloir supprimer cette manche ?')) {
+                this.deleteRound(roundIndex);
+            }
+        });
         deleteCell.appendChild(deleteBtn);
         row.appendChild(deleteCell);
 
